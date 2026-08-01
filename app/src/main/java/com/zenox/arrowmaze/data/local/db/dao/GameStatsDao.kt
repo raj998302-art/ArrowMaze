@@ -16,12 +16,12 @@ interface GameStatsDao {
     @Query("SELECT * FROM game_stats WHERE id = 1")
     fun getStats(): Flow<GameStatsEntity?>
 
-    @Query("UPDATE game_stats SET levelsCompleted = :val WHERE id = 1")
-    suspend fun updateLevelsCompleted(val: Int)
+    @Query("UPDATE game_stats SET levelsCompleted = :value WHERE id = 1")
+    suspend fun updateLevelsCompleted(value: Int)
 
-    @Query("UPDATE game_stats SET totalMoves = :val WHERE id = 1")
-    suspend fun updateTotalMoves(val: Int)
+    @Query("UPDATE game_stats SET totalMoves = :value WHERE id = 1")
+    suspend fun updateTotalMoves(value: Int)
 
-    @Query("UPDATE game_stats SET perfectLevels = :val WHERE id = 1")
-    suspend fun updatePerfectLevels(val: Int)
+    @Query("UPDATE game_stats SET perfectLevels = :value WHERE id = 1")
+    suspend fun updatePerfectLevels(value: Int)
 }
