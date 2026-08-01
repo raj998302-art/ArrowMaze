@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Shorthand aliases for themes.xml -->
+    <color name="primary">@color/md_theme_primary</color>
+    <color name="onPrimary">@color/md_theme_on_primary</color>
+    <color name="primaryContainer">@color/md_theme_primary_container</color>
+    <color name="onPrimaryContainer">@color/md_theme_on_primary_container</color>
+    <color name="secondary">@color/md_theme_secondary</color>
+    <color name="onSecondary">@color/md_theme_on_secondary</color>
+    <color name="secondaryContainer">@color/md_theme_secondary_container</color>
+    <color name="onSecondaryContainer">@color/md_theme_on_secondary_container</color>
+    <color name="tertiary">@color/md_theme_tertiary</color>
+    <color name="onTertiary">@color/md_theme_on_tertiary</color>
+    <color name="tertiaryContainer">@color/md_theme_tertiary_container</color>
+    <color name="onTertiaryContainer">@color/md_theme_on_tertiary_container</color>
+    <color name="error">@color/md_theme_error</color>
+    <color name="onError">@color/md_theme_on_error</color>
+    <color name="errorContainer">@color/md_theme_error_container</color>
+    <color name="onErrorContainer">@color/md_theme_on_error_container</color>
+    <color name="surface">@color/md_theme_surface</color>
+
     <!-- ==================== Material 3 Color System ==================== -->
     <color name="md_theme_primary">#3B6CFF</color>
     <color name="md_theme_on_primary">#FFFFFF</color>
