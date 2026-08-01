@@ -12,7 +12,7 @@ class SeededRandom(private var seed: Long) {
         t = t xor (t shl 25)
         t = t xor (t ushr 27)
         state = t
-        return (t and 0x7FFFFFFF)
+        return (t and 0x7FFFFFFFL).toInt()
     }
 
     fun nextInt(bound: Int): Int {
@@ -28,9 +28,10 @@ class SeededRandom(private var seed: Long) {
         for (i in list.size - 1 downTo 1) {
             val j = nextInt(i + 1)
             @Suppress("UNCHECKED_CAST")
-            val tmp = list[i]
-            list[i] = list[j]
-            list[j] = tmp
+            val mutableList = list as MutableList<Any>
+            val tmp = mutableList[i]
+            mutableList[i] = mutableList[j]
+            mutableList[j] = tmp
         }
     }
 

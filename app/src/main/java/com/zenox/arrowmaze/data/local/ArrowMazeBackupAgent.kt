@@ -28,7 +28,7 @@ class ArrowMazeBackupAgent : BackupAgentHelper() {
 
     override fun onBackup(
         oldState: android.os.ParcelFileDescriptor?,
-        data: android.backup.BackupDataOutput?,
+        data: android.app.backup.BackupDataOutput?,
         newState: android.os.ParcelFileDescriptor?
     ) {
         // Delegate to super for standard backup handling
@@ -36,7 +36,7 @@ class ArrowMazeBackupAgent : BackupAgentHelper() {
     }
 
     override fun onRestore(
-        data: android.backup.BackupDataInput?,
+        data: android.app.backup.BackupDataInput?,
         appVersionCode: Int,
         newState: android.os.ParcelFileDescriptor?
     ) {

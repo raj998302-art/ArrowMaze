@@ -52,14 +52,14 @@ class ShopViewModel @Inject constructor(
         }
     }
 
-    private fun loadCategory(category: ShopCategory) {
+    private suspend fun loadCategory(category: ShopCategory) {
         val items = shopRepository.getItemsByCategory(category)
         _uiState.value = _uiState.value.copy(items = items)
     }
 
     fun selectCategory(category: ShopCategory) {
         _uiState.value = _uiState.value.copy(selectedCategory = category)
-        loadCategory(category)
+        viewModelScope.launch { loadCategory(category) }
     }
 
     fun purchaseItem(item: ShopItem) {

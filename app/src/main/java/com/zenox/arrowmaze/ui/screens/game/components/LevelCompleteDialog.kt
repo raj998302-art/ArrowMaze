@@ -102,7 +102,7 @@ fun LevelCompleteDialog(
                 if (isPerfect) {
                     AnimatedVisibility(
                         visible = true,
-                        enter = fadeIn(tween(300)) + scaleIn(tween(300, initialScale = 0.8f))
+                        enter = fadeIn(tween(300)) + scaleIn(tween(300), initialScale = 0.8f)
                     ) {
                         SuggestionChip(
                             onClick = {},
@@ -120,7 +120,7 @@ fun LevelCompleteDialog(
                     Spacer(modifier = Modifier.height(8.dp))
                     AnimatedVisibility(
                         visible = true,
-                        enter = fadeIn(tween(400, delayMillis = 200)) + scaleIn(tween(400, initialScale = 0.8f))
+                        enter = fadeIn(tween(400, delayMillis = 200)) + scaleIn(tween(400), initialScale = 0.8f)
                     ) {
                         SuggestionChip(
                             onClick = {},
@@ -138,7 +138,7 @@ fun LevelCompleteDialog(
                     Spacer(modifier = Modifier.height(8.dp))
                     AnimatedVisibility(
                         visible = true,
-                        enter = fadeIn(tween(500, delayMillis = 400)) + scaleIn(tween(500, initialScale = 0.8f))
+                        enter = fadeIn(tween(500, delayMillis = 400)) + scaleIn(tween(500), initialScale = 0.8f)
                     ) {
                         SuggestionChip(
                             onClick = {},

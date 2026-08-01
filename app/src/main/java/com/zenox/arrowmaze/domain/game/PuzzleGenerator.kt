@@ -56,10 +56,8 @@ class PuzzleGenerator {
                 if (validDirections.isEmpty()) continue
 
                 val chosenDir = validDirections[rng.nextInt(validDirections.size)]
-                val snakeLength = rng.nextInt(
-                    Constants.MIN_SNAKE_LENGTH,
-                    Constants.MAX_SNAKE_LENGTH + 1
-                )
+                val snakeLength = Constants.MIN_SNAKE_LENGTH +
+                    rng.nextInt(Constants.MAX_SNAKE_LENGTH - Constants.MIN_SNAKE_LENGTH + 1)
 
                 val bodyDir = chosenDir.opposite()
                 val snakeCells = mutableListOf(headCell)

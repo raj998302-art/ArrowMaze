@@ -15,7 +15,7 @@ class ShopRepository @Inject constructor(
     private val firestoreService: FirestoreService
 ) {
 
-    fun getAllShopItems(): List<ShopItem> {
+    suspend fun getAllShopItems(): List<ShopItem> {
         val player = playerDao.getPlayer().map { it }.first() ?: return buildAllDefinitions()
         val ownedThemes = player.ownedThemes.split(",").filter { it.isNotBlank() }.toSet()
         val ownedSkins = player.ownedSkins.split(",").filter { it.isNotBlank() }.toSet()
@@ -41,7 +41,7 @@ class ShopRepository @Inject constructor(
         }
     }
 
-    fun getItemsByCategory(category: ShopCategory): List<ShopItem> {
+    suspend fun getItemsByCategory(category: ShopCategory): List<ShopItem> {
         return getAllShopItems().filter { it.category == category }
     }
 

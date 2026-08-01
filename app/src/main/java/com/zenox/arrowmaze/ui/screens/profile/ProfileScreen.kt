@@ -111,7 +111,7 @@ fun ProfileScreen(
                 title = { Text("Profile") },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 }
             )
@@ -201,9 +201,10 @@ fun ProfileScreen(
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
-                    if (!profile?.bio.isNullOrBlank()) {
+                    val bio = profile?.bio
+                    if (!bio.isNullOrBlank()) {
                         Text(
-                            profile.bio,
+                            bio,
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             textAlign = TextAlign.Center

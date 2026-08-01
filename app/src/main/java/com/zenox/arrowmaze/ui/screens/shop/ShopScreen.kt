@@ -52,7 +52,7 @@ fun ShopScreen(
                 title = { Text("Shop") },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 },
                 actions = {
@@ -86,14 +86,7 @@ fun ShopScreen(
                 // Category tabs
                 ScrollableTabRow(
                     selectedTabIndex = categories.indexOf(state.selectedCategory),
-                    edgePadding = 16.dp,
-                    indicator = { tabPositions ->
-                        if (categories.indexOf(state.selectedCategory) < tabPositions.size) {
-                            TabRowDefaults.SecondaryIndicator(
-                                modifier = Modifier.tabIndicatorOffset(tabPositions[categories.indexOf(state.selectedCategory)])
-                            )
-                        }
-                    }
+                    edgePadding = 16.dp
                 ) {
                     categories.forEach { category ->
                         Tab(

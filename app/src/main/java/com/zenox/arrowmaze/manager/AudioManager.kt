@@ -62,13 +62,13 @@ class AudioManager constructor(
         try {
             val (toneType, durationMs) = when (sound) {
                 Sound.TAP -> ToneGenerator.TONE_PROP_BEEP to 50
-                Sound.BUTTON -> ToneGenerator.TONE_CDMA_KEYPAD_VOLUME_KEY_LIGHT to 60
+                Sound.BUTTON -> ToneGenerator.TONE_PROP_BEEP2 to 60
                 Sound.COIN -> ToneGenerator.TONE_CDMA_ABBR_ALERT to 120
                 Sound.BUY -> ToneGenerator.TONE_CDMA_PIP to 100
                 Sound.HINT -> ToneGenerator.TONE_CDMA_ALERT_NETWORK_LITE to 200
                 Sound.WRONG -> ToneGenerator.TONE_CDMA_ABBR_REORDER to 300
-                Sound.UNLOCK -> ToneGenerator.TONE_CDMA_ALERT_SMS to 250
-                Sound.VICTORY -> ToneGenerator.TONE_CDMA_ALERT_CALL_MED to 400
+                Sound.UNLOCK -> ToneGenerator.TONE_CDMA_ABBR_ALERT to 250
+                Sound.VICTORY -> ToneGenerator.TONE_CDMA_PIP to 400
             }
             tg.startTone(toneType, durationMs)
         } catch (e: Exception) {

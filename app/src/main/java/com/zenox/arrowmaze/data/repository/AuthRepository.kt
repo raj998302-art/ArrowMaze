@@ -116,7 +116,7 @@ class AuthRepository @Inject constructor(
             ?: throw IllegalStateException("No user currently signed in")
         val downloadUrl = uri.toString()
         firestore.collection("players").document(user.uid).update(
-            "avatarUrl" to downloadUrl
+            mapOf("avatarUrl" to downloadUrl)
         ).await()
         downloadUrl
     }
