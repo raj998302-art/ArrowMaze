@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle (subtle) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M54,54m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0" />
+
+    <!-- Central upward arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20L34,45H44V82H64V45H74L54,20Z" />
+
+    <!-- Left arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.5"
+        android:pathData="M18,58L30,46V53H38V63H30V70L18,58Z" />
+
+    <!-- Right arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.5"
+        android:pathData="M90,58L78,46V53H70V63H78V70L90,58Z" />
+
+    <!-- Grid lines (maze effect) - horizontal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M26,36h56v1.5h-56z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M26,72h56v1.5h-56z" />
+
+    <!-- Grid lines (maze effect) - vertical -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M26,36h1.5v37.5h-1.5z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.12"
+        android:pathData="M80.5,36h1.5v37.5h-1.5z" />
+
+    <!-- Small dot accents (maze path markers) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M44,54m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M54,64m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M64,54m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+
+</vector>

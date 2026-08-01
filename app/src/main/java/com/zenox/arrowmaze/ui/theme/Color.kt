@@ -1,0 +1,51 @@
+package com.zenox.arrowmaze.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+// --- Light scheme ---
+val PrimaryLight = Color(0xFF3B6CFF)
+val OnPrimaryLight = Color(0xFFFFFFFF)
+val PrimaryContainerLight = Color(0xFFD9E2FF)
+val SecondaryLight = Color(0xFF7B4DFF)
+val OnSecondaryLight = Color(0xFFFFFFFF)
+val SecondaryContainerLight = Color(0xFFEADDFF)
+val TertiaryLight = Color(0xFF00BFA5)
+val SurfaceLight = Color(0xFFF7F9FF)
+val OnSurfaceLight = Color(0xFF16213D)
+val BackgroundLight = Color(0xFFEEF3FF)
+val OnBackgroundLight = Color(0xFF16213D)
+val ErrorLight = Color(0xFFBA1A1A)
+val OnErrorLight = Color(0xFFFFFFFF)
+val OutlineLight = Color(0xFF7B8599)
+val OutlineVariantLight = Color(0xFFD9E2F5)
+val SurfaceVariantLight = Color(0xFFE3E8F0)
+val InverseSurfaceLight = Color(0xFF16213D)
+val InverseOnSurfaceLight = Color(0xFFF0E6FF)
+
+// --- Dark scheme ---
+val PrimaryDark = Color(0xFF6B8FFF)
+val OnPrimaryDark = Color(0xFF0030AC)
+val PrimaryContainerDark = Color(0xFF0046F0)
+val SecondaryDark = Color(0xFFB3A0FF)
+val OnSecondaryDark = Color(0xFF3400A0)
+val SurfaceDark = Color(0xFF131C33)
+val OnSurfaceDark = Color(0xFFEAF0FF)
+val BackgroundDark = Color(0xFF0D1424)
+val OnBackgroundDark = Color(0xFFEAF0FF)
+val ErrorDark = Color(0xFFFFB4AB)
+val OnErrorDark = Color(0xFF690005)
+val OutlineDark = Color(0xFF8FA1C7)
+val OutlineVariantDark = Color(0xFF27335C)
+val SurfaceVariantDark = Color(0xFF1D2747)
+
+// --- Game-specific colors ---
+val HeartRed = Color(0xFFFF4757)
+val CoinGold = Color(0xFFFFD700)
+val HintCyan = Color(0xFF00D2FF)
+val XpPurple = Color(0xFFA855F7)
+val BoardLight = Color(0xFFEEF2FB)
+val BoardDark = Color(0xFF141C33)
+val NeonGreen = Color(0xFF00FFCC)
+val NeonBlue = Color(0xFF00A2FF)
+val CyberPink = Color(0xFFFF2EA6)
+val CyberYellow = Color(0xFFFFE95E)

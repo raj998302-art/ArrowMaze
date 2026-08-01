@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Internal cache directory for temporary files -->
+    <cache-path
+        name="cache"
+        path="." />
+
+    <!-- Internal files directory -->
+    <files-path
+        name="files"
+        path="." />
+
+    <!-- External cache for images (profile pictures, shared content) -->
+    <external-cache-path
+        name="external_cache"
+        path="images/" />
+
+    <!-- External files for camera captures -->
+    <external-files-path
+        name="external_files"
+        path="Pictures/" />
+</paths>
